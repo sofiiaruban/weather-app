@@ -10,7 +10,7 @@ for (let i = 0; i < cities.length; i++) {
 
 function getData() {
     let id = selectBox.value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=d50fd56618d89e4e576df8326b0d3fbd`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=d50fd56618d89e4e576df8326b0d3fbd`)
         .then(function (resp) { return resp.json() })
         .then(function (data) {
             document.querySelector('.city_name').textContent = data.name;
